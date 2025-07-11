@@ -1,13 +1,24 @@
+import numbers
 
-def fib(n):
+def fib(numero):
     a=0
     b=1
     
-    while a < n:
-        print(a, end='')
-        a=b
-        b=a+b
+    if isinstance(numero, numbers.Number):
+        print("es un numero")
+       
+        while a < numero:
+                print(a, end='')
+                a=b
+                b=a+b
+                
         print()
+        print("Fin del programa")
         
-        
-fib(100)
+    
+    else:
+        print("no es un numero")
+    
+fib(1000) 
+
+
