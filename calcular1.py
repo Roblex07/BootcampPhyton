@@ -10,7 +10,7 @@
 import numbers
 num1=input('Número 1: ')
 num2=input('Número 2: ')
-listaresultados=[0,0,0,0,0,0]
+listaresultados=[0,0,0,0,0,0,0]
 if isinstance(float(num1), numbers.Number) & isinstance(float(num2), numbers.Number):
     #Suma de dos valores (+)
     listaresultados[0]=float(num1)+float(num2)
@@ -23,7 +23,8 @@ if isinstance(float(num1), numbers.Number) & isinstance(float(num2), numbers.Num
         
         #Division (/)
     listaresultados[3]=float(num1)/float(num2)
-        
+        #Elevado (**)
+    listaresultados[4]=float(num1)**float(num2)
          
     for i in range (0, len(listaresultados)):
         print("El resultado de la operacion es")
