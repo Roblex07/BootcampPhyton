@@ -3,36 +3,33 @@
 #ALGORITMO
 #Dos varibales que guarden la informacion de los valores de entrada
 #Una variable que guarde el resultado de la operación
-#Compribar que los valores introducidos por el usuraio son numeros o no
-    #Si son numneros hacemos las correspondeintes operaciones
+#Comprobar que los valores introducidos por el usuraio son números o no
+    #Si son números hacemos las correspondientes operaciones
     #Si no pues print("No son numeros animal")
 
 import numbers
-
-def operacione(N1, N2):
-    num1=N1
-    num2=N2
-    resultado=0
-    listaresultados=[0,0,0,0,0,0]
-    if isinstance(num1, numbers.Number) & isinstance(num2, numbers.Number):
-        #Suma de dos valores (+)
-        listaresultados[0]=num1+num2
-        
+num1=input('Número 1: ')
+num2=input('Número 2: ')
+listaresultados=[0,0,0,0,0,0]
+if isinstance(float(num1), numbers.Number) & isinstance(float(num2), numbers.Number):
+    #Suma de dos valores (+)
+    listaresultados[0]=float(num1)+float(num2)
+    
         #Resta de dos valores (-)
-        listaresultados[1]=num1-num2
+    listaresultados[1]=float(num1)-float(num2)
         
         #Multiplicacion (*)
-        listaresultados[2]=num1*num2
+    listaresultados[2]=float(num1)*float(num2)
         
         #Division (/)
-        listaresultados[3]=num1/num2
+    listaresultados[3]=float(num1)/float(num2)
         
          
-        for i in range (0, len(listaresultados)):
-            print("El resultado de la operacion es")
-            print(listaresultados[i])
-    else:
-        print("No son numeros animal") 
+    for i in range (0, len(listaresultados)):
+        print("El resultado de la operacion es")
+        print(listaresultados[i])
+else:
+    print("No son numeros animal") 
         
         
-operacione(4,2)
+        
